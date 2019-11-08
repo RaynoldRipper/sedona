@@ -1,0 +1,55 @@
+
+.intro {
+  position: relative;
+  background: url(.//../../img/back-mobile.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 389px;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    background: url(.//../../img/intro-triangle.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: 0;
+  }
+}
+
+@media(min-width:768px){
+  .intro{
+    position: relative;
+    background: url(.//../../img/back-desktop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 57px;
+      background: url(.//../../img/intro-triangle-tablet.png) no-repeat;
+      background-size: 100% 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@media(min-width:1200px){
+  .intro::before{
+    background: url(.//../../img/intro-triangle-desktop.png)
+  }
+}
+
+.intro__wrapper {
+  background: url(.//../../img/intro-text.svg) no-repeat;
+  z-index: 1;
+  max-width: 280px;
+  height: 215px;
+  margin: auto;
+}
+
+.intro__wrapper-space {
+  height: 90px;
+}

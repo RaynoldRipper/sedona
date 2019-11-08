@@ -1,0 +1,129 @@
+.footer {
+  list-style: none;
+  text-align: center;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.footer__tag {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.footer__social__list {
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social__ittem {
+  position: relative;
+  margin: 3px;
+  width: 46px;
+  height: 48px;
+  transition: 300ms;
+  background-color: #81b3d2;
+  :hover{
+    transition: 300ms;
+    background-color: #669ec0;
+  }
+  :active{
+    transition: 200ms;
+    opacity: 0.3;
+  }
+}
+.social__ittem a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social--twitter::before{
+  position: absolute;
+  top: 29%;
+  left: 15px;
+  content: url(.//../../img/icon-twitter.svg);
+}
+
+.social--facebook::before {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  content: url(.//../../img/icon-facebook.svg);
+}
+
+.social--vk::before {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  content: url(.//../../img/vk-social.svg);
+}
+
+.social--youtube::before {
+  position: absolute;
+  top: 29%;
+  left: 13px;
+  content: url(.//../../img/icon-youtube.svg);
+}
+
+.footer__by {
+  font-size: 14px;
+  position: relative;
+}
+
+.footer__by:hover .footer__htmlacademy{
+  background: url(.//../../img/htmacademy-hover.png) no-repeat;
+}
+
+.footer__by:active .footer__htmlacademy {
+  opacity: 0.5;
+}
+
+@media(min-width:50px){
+  .footer__by {
+    a{
+      color: #000;
+      text-decoration: none;
+      position: relative;
+    }
+    .footer__htmlacademy{
+      background: url(.//../../img/htmacademy.png) no-repeat;
+      width: 27px;
+      height: 34px;
+      position: absolute;
+      right: -40%;
+      top: -45%;
+    }
+  }
+}
+
+
+@media(min-width:768px){
+  .footer{
+    display: flex;
+    flex-basis: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .footer__tag{
+    padding-top: 17px;
+  }
+
+  .footer__htmlacademy {
+    position: absolute;
+    top:-8px;
+    right: -39px; 
+  }
+  
+
+}
+

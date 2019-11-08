@@ -1,0 +1,225 @@
+@media(min-width:150px){
+  .photo__cart{
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .photo__cart::after{
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color:  #e5e5e5;
+    left: -20px;
+    bottom: 0;
+  }
+
+  .photo__image{
+    width: 280px;
+    height: 280px;
+    &--1{
+      background: url(.//../../img/photo-1-mobile.jpg) no-repeat;
+    }
+    &--2{
+      background: url(.//../../img/photo-2-mobile.jpg) no-repeat;
+    }
+    &--3{
+      background: url(.//../../img/photo-3-mobile.jpg) no-repeat;
+    }
+    &--4{
+      background: url(.//../../img/photo-4-mobile.jpg) no-repeat;
+    }
+  }
+
+  .photo__like-quantiti{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+    position: absolute;
+    right: 218px;
+    bottom: 24px;
+  }
+
+  .photo__like {
+    content: url('.//../../img/like.svg');
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 20px;
+    height: 22px;
+  }
+}
+
+@media (min-width:768px){
+  .photo__cart{
+    margin-top: 0;
+  }
+
+  .h2--photo{
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 18px;
+    padding-bottom: 0;
+  }
+
+  .p--photo{
+    padding-top: 0;
+    padding-left: 20px;
+  }
+
+  .photo__cart::after{
+    content: none;
+  }
+
+  .photo__cart:nth-child(2){
+    width: 100%;
+  }
+
+  .photo__cart:nth-child(n+3){
+    width: 50%;
+  }
+
+  .photo__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo__preview{
+    flex-grow: 1;
+    width: 87.5%;
+  }
+
+  .photo__image{
+    width: 100%;
+    height: 268px;
+    &--1{
+      width: 100%;
+      height: 400px;
+      background: url(.//../../img/photo-1-tablet.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &--2{
+      background: url(.//../../img/photo-2-tablet.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &--3{
+      background: url(.//../../img/photo-3-tablet.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &--4{
+      background: url(.//../../img/photo-4-tablet.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .photo__tittle {
+    position: relative;
+    height: 80px;
+    background-color: #f2f2f2;
+  }
+
+  .photo__like{
+    margin: 0;
+    position: absolute;
+    right: 62px;
+    top: 28px;
+  }
+
+  .photo__like-quantiti {
+    width: 35px;
+    position: absolute;
+    right: 21px;
+    bottom: 32px;
+    left: unset;
+  }
+}
+
+@media(min-width:1200px){
+  .photo{
+    width: 100%;
+  }
+  .photo__cart:nth-child(2){
+    width: 100%;
+  }
+
+  .photo__cart{
+    position: relative;
+  }
+
+  .photo__cart:nth-child(n+3){
+    width: 400px;
+  }
+  .photo__image{
+    width: 100%;
+    height: 268px;
+    &--1{
+      width: 100%;
+      height: 400px;
+      background: url(.//../../img/photo-1-desktop.jpg) no-repeat;
+    }
+    &--2{
+      background: url(.//../../img/photo-2-desktop.jpg) no-repeat;
+    }
+    &--3{
+      background: url(.//../../img/photo-3-desktop.jpg) no-repeat;
+    }
+    &--4{
+      background: url(.//../../img/photo-4-desktop.jpg) no-repeat;
+    } 
+  } 
+
+  .photo__tittle{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: none;
+    h2, p, span{
+      color: #fff;
+      z-index: 1;
+    }
+  }
+  .photo__tittle .h2--photo{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .photo__tittle .p--photo{
+    position: absolute;
+    bottom: 8px;
+  }
+  .tittle__wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.35;
+    background: #000;
+  }
+  .photo__like {
+    content: url('.//../../img/like-white.svg');
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width:1200px){
+    .photo__like{
+      content: none;
+      background: url(.//../../img/like-white.svg) no-repeat;
+      background-position: center;
+    }
+
+  }
+  
+  @supports (-ms-ime-align:auto) and (min-width:1200px){
+    .photo__like{
+      content: none;
+      background: url(.//../../img/like-white.svg) no-repeat;
+      background-position: center;
+    }
+  }
+}

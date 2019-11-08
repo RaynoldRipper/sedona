@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Sedona</title>
+</head>
+<body>
+	<div class="wrapper wrapper--photo">
+		<header class="main-header">
+			<nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+				<ul class="main-nav__list">
+					<li class="main-nav__ittem">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="main-nav__ittem">
+						<a href="photo.html">Фото и видео</a>
+					</li>
+					<li class="main-nav__ittem main-nav__ittem--active">
+						<a>Форма отзыва</a>
+					</li>
+					<li class="main-nav__ittem">
+						<a href="">Html academy</a>
+					</li>
+					<li class="main-nav__ittem main-nav__ittem--active main-nav__logo">
+						<div class="main-nav__logo--wrapper"><a href=""></a></div>
+					</li>
+					<button class="button-togle button-togle--opened"></button>
+				</ul>
+			</nav>
+		</header>	
+		<main class="container">
+			<section class="intro intro--photo">
+				<div class="intro__wrapper-space--photo"></div>
+				<div class="intro__wrapper intro__wrapper--photo"></div>
+			</section>
+			<section class="form">
+				<div class="form__block form__preview">
+					<h2 class="h2">Оставьте свой отзыв</h2>
+					<p class="p">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+				</div>
+				<form id="form-review" action="">
+					<div class="form__wrapper">
+						<div class="preview"></div>
+						<div class="form__block form__introducing">
+							<h2 class="h2">Представьтесь:</h2>
+							<label><p class="p--form">Имя*:</p><input required class="form__input-text" type="text" placeholder="Петр"></label>
+							<label><p class="p--form">Фамилия*:</p><input required  class="form__input-text" type="text" placeholder="Иванов"></label>
+							<label><p class="p--form">Отчество:</p><input class="form__input-text" type="text" placeholder="Александрович"></label>
+						</div>
+						<div class="form__block form__contacts">
+							<h2 class="h2">Контактная информация:</h2>
+							<label>
+								<p class="p--form"><span class="visually-hidden--1200">Контактный</span> телефон*:</p>
+								<input required class="form__input-text form__input-text--contacts" type="number " placeholder="Введите телефон">
+							</label>
+							<label>
+								<p class="p--form">Электронная почта*:</p>
+								<input required id="eamil" class="form__input-text form__input-text--contacts" type="email" name="e-mail" placeholder="Введите e-mail">
+							</label>
+						</div>
+						<div class="form__block form__impressions">
+							<h2 class="h2">Ваше общее впечатление:</h2>
+							<label>
+								<input id="imres-radio" type="radio" name="impressions" value="positive">
+								<span></span>
+								<p class="p--form">Скорее положительное</p>
+							</label>
+							<label>
+								<input id="imres-radio" type="radio" name="impressions" value="negative">
+								<span></span>
+								<p class="p--form">Скорее отрицательное</p>
+							</label>
+							<label>
+								<input id="imres-radio" type="radio" name="impressions" value="neutral">
+								<span></span>
+								<p class="p--form">Затрудняюсь ответить</p>
+							</label>
+						</div>
+						<div class="form__block form__visited">
+							<h2 class="h2">Посещенные<br> достопримечательности:</h2>
+							<label>
+								<input type="checkbox">
+								<span></span>
+								<p class="p--form">Мост Дьявола</p>
+						</label>
+							<label>
+								<input type="checkbox">
+								<span></span>
+								<p class="p--form">Слайд-парк</p>
+							</label>
+							<label>
+								<input type="checkbox">
+								<span></span>
+								<p class="p--form">Гора-Колокол</p>
+							</label>
+							<label>
+								<input type="checkbox">
+								<span></span>
+								<p class="p--form">Красные скалы</p>
+							</label>
+						</div>
+						<div class="form__emotions">
+							<h2 class="h2">Опишите свои Эмоции:</h2>
+							<textarea class="form__input-text form__input-text--area" placeholder="Опишите подробно все свои восторги"></textarea>
+							<button type="submit" class="button button--find-hotel">Отправить отзыв</button>
+							<p class="p--form">*-Обязательные поля</p>
+						</div>
+					</div>
+					<div class="form__popup__bgrwrap"></div>
+					<div id="popup-fail" class="form__poup-fail">
+						<h2 class="h2">Что-то пошло не так!</h2>
+						<p class="p">Проверьте поля,выделеные красным, скорее всего вы забыли их заполнить</p>
+						<button id="button-close" type="button" class="button button--close">Ок</button>
+					</div>
+					<div id="popup-sucsess" class="form__popup-sucsess">
+						<h2 class="h2">Ваш отзыв отправлен!</h2>
+						<p class="p">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+							В ближайшее время мы опубликуем его на сайте.</p>
+						<div class="form__button__wrapper">
+							<button id="button-close" type="button" class="button button--close">Закрыть окно</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<footer>
+				<ul class="footer">
+					<li class="footer__tag">#visitsedona</li>
+					<li class="footer__social">
+						<ul class="footer__social__list social__list">
+							<li class="social__ittem"><a class="social--vk" href=""></a></li>
+							<li class="social__ittem"><a class="social--twitter" href=""></a></li>
+							<li class="social__ittem"><a class="social--facebook" href=""></a></li>
+							<li class="social__ittem"><a class="social--youtube" href=""></a></li>
+						</ul>
+					</li>
+					<li class="footer__by"><a href="">Разработано<div class="footer__htmlacademy"></div></a></li>
+				</ul>
+			</footer>
+		</main>
+</div>
+<script src="./js/js.js"></script>
+</body>
+</html>

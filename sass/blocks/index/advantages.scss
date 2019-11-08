@@ -1,0 +1,19 @@
+.p {
+  padding-top: 20px;
+}
+
+.p--number-white {
+  padding: 0;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.p--number-black {
+  padding: 0;
+  margin: 0 auto;
+  color: #000;
+}
+
+@import './advantges/advantag-ittem.scss';
+@import './advantges/advantage-preview.scss';
+@import './advantges/advantage-travel.scss';

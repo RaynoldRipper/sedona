@@ -1,0 +1,52 @@
+@media(min-width:150px){
+  .form__emotions p {
+    display: none;
+  }
+}
+@media(min-width:768px){
+  .form__emotions{
+    position: relative;
+    text-align: left;
+    width: 100%;
+    order: 5;
+    .h2{
+      text-align: center;
+      position: relative;
+    }
+    .form__input-text--area {
+      margin-left: 6.25%;
+
+    }
+    .h2::after{
+      content: '';
+      position: absolute;
+      width: 16.27%;
+      height: 1px;
+      background-color:  #e5e5e5;
+      top: 32px;
+      left: 6.25%;
+    }
+    .h2::before{
+      content: '';
+      position: absolute;
+      width: 16.27%;
+      height: 1px;
+      background-color:  #e5e5e5;
+      top: 32px;
+      right: 6.25%;
+    }
+    button {
+      width: 42.18%;
+      margin-left: 6.25%;
+      padding: 0;
+      
+    }
+    .p--form{
+      display: inline;
+      position: absolute;
+      margin-left: 31%;
+      right: 6.25%;
+      bottom: 40px;
+    }
+  }
+}

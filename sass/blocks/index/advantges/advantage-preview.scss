@@ -1,0 +1,69 @@
+.advantage__preview {
+  text-align: center;
+  max-width: 260px;
+  margin: auto;
+  margin-top: 25px;
+  p {
+    line-height: 26px;
+  }
+}
+
+.adventage__preview-background1 {
+  background: url(.//../../img/photo-city1x.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 260px;
+}
+
+.adventage__preview-background2 {
+  background: url(.//../../img/photo-bridge1x.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 260px;
+}
+
+@media(min-width:768px){
+  .advantage__preview{
+    width: 100%;
+    max-width: 490px;
+  }
+  
+  .advantage__wrapper {
+    display: flex;
+  }
+
+  .adventage__preview-background1{
+    background: url(.//../../img/photo-city1x-tablet.jpg)no-repeat;
+    width: 65%;
+    background-size: cover;
+    background-position: center;
+    min-height: 260px;
+  }
+  
+  .adventage__preview-background2{
+    background: url(.//../../img/photo-bridge1x-tablet.jpg) no-repeat;
+    width: 65%;
+    background-size: cover;
+    background-position: center;
+    min-height: 260px;
+  }
+}
+
+@media(min-width:1200px){
+  .adventage__preview-background1{
+    background: url(.//../../img/photo-city1x-desktop.jpg)no-repeat;
+    width: 65%;
+    background-size: cover;
+    background-position: center;
+    min-height: 260px;
+  }
+
+  .adventage__preview-background2{
+    background: url(.//../../img/photo-bridge1x-desktop.jpg) no-repeat;
+    width: 65%;
+    background-size: cover;
+    background-position: center;
+    min-height: 260px;
+  }
+
+}

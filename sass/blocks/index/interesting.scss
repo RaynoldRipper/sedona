@@ -1,0 +1,37 @@
+.interesting {
+  text-align: center;
+  .p {
+    max-width: 265px;
+    margin: 0 auto;
+  }
+  .h2{
+    margin: auto;
+    padding-top: 40px;
+  }
+}
+
+.button--find-hotel {
+  width: 87.5%;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+}
+
+.button:hover{
+  background-color: #669ec0;
+}
+
+.button:active{
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.interesting__map {
+  padding-top: 50px;
+}
+
+@media(min-width:768px){
+  .button--find-hotel{
+    width: 59.6%;
+    margin: auto;
+  }
+}

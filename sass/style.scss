@@ -1,0 +1,92 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.h2{
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  &--white{
+    color: #fff;
+  }
+}
+.p {
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  &--white{
+    color: #fff;
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  height: 58px;
+  border: 0;
+  color: #fff;
+  outline: none;
+  background-color: #81b3d2;
+  border-left: #8cbad6 solid 1px;
+  border-right: #8cbad6 solid 1px;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+@media(min-width:1200px){
+  body{
+    background-color: #f2f2f2;
+  }  
+  .wrapper{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(163,163,163,1);
+  }
+  .visually-hidden--1200{
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+  }
+}
+@import './blocks/index/head.scss';
+@import './blocks/index/intro.scss';
+@import './blocks/index/advantages.scss';
+@import './blocks/index/interesting.scss';
+@import './blocks/index/footer.scss';
+@import './variables.scss';
+@import './blocks/index/head/button-togle.scss';
+@import './blocks/index/head/nav-ittem.scss';
+@import './blocks/photo&video/head.scss';
+@import './blocks/photo&video/photo.scss';
+@import './blocks/photo&video/video.scss';
+@import './blocks/photo&video/photo/photo-cart.scss';
+@import './blocks/form/form.scss';
+@import './blocks/form/form-blocks/conatcts.scss';
+@import './blocks/form/form-blocks/impressions.scss';
+@import './blocks/form/form-blocks/introduce.scss';
+@import './blocks/form/form-blocks/visited.scss';
+@import './blocks/form/form-blocks/emotions.scss';
+@import './blocks/form/form-blocks/popups.scss';
+
+@import './blocks/normalize.scss';

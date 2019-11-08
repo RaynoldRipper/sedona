@@ -1,0 +1,55 @@
+
+.button-togle--closed {
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  outline: none;
+  &::after,&::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background-color: #fff;
+    
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.button-togle--opened {
+  position: absolute;
+  right: 20px;
+  bottom:17px;
+  width: 23px;
+  height: 20px;
+  background-color: #81b3d2;
+  border: none;
+  outline: none;
+  padding: 0;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: #fff;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: #fff;
+  }
+}

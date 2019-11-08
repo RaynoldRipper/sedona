@@ -1,0 +1,29 @@
+@media(min-width:150px){
+  .intro--photo {
+    position: relative;
+    background: url(.//../../img/back-desktop.jpg) no-repeat;
+    max-height: 160px;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .intro__wrapper--photo{
+    background: url(.//../../img/sedona.svg) no-repeat;
+    width: 230px;
+    height: 75px;
+  }
+
+  .intro__wrapper-space--photo {
+    height: 52px;
+  }
+}
+
+@media(min-width:768px){
+  .intro--photo{
+  max-height: 290px;
+  }
+
+  .intro__wrapper-space--photo{
+    height: 95px;
+  }
+}
