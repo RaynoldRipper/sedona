@@ -30,6 +30,6 @@
     "gulp-sourcemap": "^1.0.1",
     "gulp-sourcemaps": "^2.6.5",
     "node-normalize-scss": "^8.0.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   }
 }
